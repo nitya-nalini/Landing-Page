@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#top{
+    width: 100%;
+    min-height: 50vh;
+    background-image: url(https://media.assettype.com/tnm%2Fimport%2Fsites%2Fdefault%2Ffiles%2Falta_representative.jpg?w=1200&auto=format%2Ccompress&fit=max.jpg);
+    background-size: cover;
+    background-position: 50% 60%;
+    background-attachment: scroll;
+}
+
+#overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.014);
+}
+ 
+#text{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    color: #fff;
+    bottom: 20%;
+    width: 100%;
+    padding: 0 10vw;
+}
+
+#text h1{
+    display: flex;
+    font-weight: 500;
+    font-size: 6vw;
+    justify-content: space-between;
+}
+
+#text-right{
+    display: flex;
+    width: 50%;
+    align-items:center;
+    justify-content: space-between;
+}
+
+#text-right p{
+    font-size: 12px;
+    width: 40%;
+
+}
+
+#bottom{
+    display: flex;
+    width: 100%;
+    min-height: 50vh;
+    background-color:grey;
+}
+
+#bone{
+    width: 25%;
+    min-height: inherit;
+    background-color: beige;
+    padding: 30px;
+    text-align: center;
+}
+
+.btn{
+    color: black;
+    background: skyblue;
+}
+
+#btwo{
+    width: 25%;
+    min-height: inherit;
+    background-image: url(https://blogmedia.testbook.com/blog/wp-content/uploads/2023/10/mohiniyattam-d1a08f53.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#bthree{
+    width: 25%;
+    min-height: inherit;
+    background-color: #332;
+    color:#fff;
+    padding:30px;
+    text-align: center;
+}
+
+.notf{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notf #photo{
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.notf p{
+    width: 86%;
+    font-size: 12px;
+}
+
+#bfour{
+    width: 25%;
+    min-height: inherit;
+    background-image: url(https://5.imimg.com/data5/MK/TN/GLADMIN-47665559/kathak-dance-500x500.png);
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 0px;
+}
+
+@media(max-width: 500px){
+    #overlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #text h1{
+        font-size: 10vw;
+    }
+
+    #bottom{
+        min-height: 40vh;
+    }
+
+    #overlay #text #text-right{
+        font-display: column;
+        align-items: flex-start;
+    }
+
+    #overlay #text #text-right p{
+         width: initial;
+         margin-top: 20px;
+    }
+
+    #overlay #text #text-right #icons{
+         margin-top: 30px;
+    }
+
+    #bottom{
+        flex-direction: column;
+    }
+
+    #bone{
+        width: 100%;
+        min-height: 15vh;
+    }
+
+    #btwo{
+        width: 100%;
+        min-height: 65vh;
+    }
+
+    #bthree{
+        flex-direction: column;
+        width: 100%;
+        min-height: 20vh;
+    }
+
+    #bfour{
+        width: 100%;
+        min-height: 65vh;
+    }
+}
